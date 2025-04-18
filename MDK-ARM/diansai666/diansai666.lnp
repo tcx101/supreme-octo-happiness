@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"diansai666\startup_stm32f407xx.o"
+"diansai666\main.o"
+"diansai666\gpio.o"
+"diansai666\stm32f4xx_it.o"
+"diansai666\stm32f4xx_hal_msp.o"
+"diansai666\stm32f4xx_hal_tim.o"
+"diansai666\stm32f4xx_hal_tim_ex.o"
+"diansai666\stm32f4xx_hal_rcc.o"
+"diansai666\stm32f4xx_hal_rcc_ex.o"
+"diansai666\stm32f4xx_hal_flash.o"
+"diansai666\stm32f4xx_hal_flash_ex.o"
+"diansai666\stm32f4xx_hal_flash_ramfunc.o"
+"diansai666\stm32f4xx_hal_gpio.o"
+"diansai666\stm32f4xx_hal_dma_ex.o"
+"diansai666\stm32f4xx_hal_dma.o"
+"diansai666\stm32f4xx_hal_pwr.o"
+"diansai666\stm32f4xx_hal_pwr_ex.o"
+"diansai666\stm32f4xx_hal_cortex.o"
+"diansai666\stm32f4xx_hal.o"
+"diansai666\stm32f4xx_hal_exti.o"
+"diansai666\system_stm32f4xx.o"
+--strict --scatter "diansai666\diansai666.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "diansai666.map" -o diansai666\diansai666.axf
